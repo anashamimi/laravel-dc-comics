@@ -41,7 +41,7 @@
             </div>
 
         </div>
-        <div class="d-flex justify-content-center align-items-center p-4">
+        <div class="d-flex justify-content-center align-items-center p-4 gap-5">
             <a href="{{ route('comics.edit', $comic->id) }}" class="btn btn-warning">Modifica</a>
             <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
                 @csrf

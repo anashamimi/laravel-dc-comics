@@ -80,7 +80,7 @@ class ComicController extends Controller
 
         $comic = Comic::findOrFail($id);
         $comic->update($form_data);
-        return redirect()->route('comics.show', $comic->$id);
+        return redirect()->route('comics.show', $comic->id);
 
     }
 
